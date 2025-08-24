@@ -232,6 +232,81 @@
  <!-- 11. Buttons  -->
   
   <button style="font-size: 25px; border-radius: 20px; background-color: aqua; color:blue">click me</button>
-</a>
+</a> <hr>
+<br>
+<br>
+<div>
+     <h3>My Form:-</h3>
+    <!-- 12. form elemente -->
+   <form action="index.php" method="POST" enctype="multipart/form-data"><!--action attribute  sends data to specified location i.e index.php.-->
+      <!--method specifies type of request. post:- confidential data like passwords whereas, get:- non-confidential data or insensative data. multipart form data mean we will break it into multiple parts and  during receive hose multiple part will be reassemble -->
+
+     <label for="username">username</label> <!--for is used for visually impeared to read by screen reader-->
+     <input type="text" id="username"  minlength="6" placeholder="baburam" maxlength="10" required><!--Making same id in inputas of for in label help cursor to move to textbox. -->
+  
+     <br>
+     <br>
+     <br>
+     <label for="passwords">Passwords</label>
+     <input type="password" id="passwords" minlength="6"         maxlength="10" required placeholder="********">
+    
+     <br>
+     <label for="email">E-Mail:-</label>
+     <input type="email" id="email" placeholder="example@gmail.com" required>
+     
+     <br>
+     <label for="dob">Date of Birth:-</label>
+     <input type="date" id="dob" placeholder="2023-01-01" required>
+    
+     <br>
+     <label for="phone">Phone no:-</label>
+
+     <input type="tel" id="phone" placeholder="9748487892" pattern="[0-9]{10}" required>
+    
+     <br>
+     <label for="quantity">Quantity:-</label>
+
+     <input type="number" id="quantity" min="1" max="100" placeholder="1-100">
+     <br>
+     <br>
+     <label for="title">Title:</label>
+     <label for="mr">Mr.</label>
+     <input type="radio" id="mr" name="title" ><!--Name similar rakhera different option milauna milxa-->
+
+     <label for="mrs">Mrs.</label>
+     <input type="radio" id="mrs" name="title">
+
+     <label for="phd">PhD.</label>
+     <input type="radio" id="phd" name="title">
+     <br>
+     <br>
+     <label for="payment">Payment</label>
+     <select id="payment">
+         <option value="esewa">Esewa</option>
+         <option value="khalti">Khalti</option>
+         <option value="phonepay">Phonepay</option>
+     </select>
+     <br>
+     <br>
+     <label>Subscribe:</label>
+     <input type="checkbox" id="Subscribe">
+     <br>
+     <br>
+     <label for="comment">Comment</label>
+     <textarea id="comment" rows="3" cols="20"></textarea>
+     <br>
+     <br>
+     <label for="file">File:</label>
+     <input type="file" id="file" accept="image/png,image/jpeg">
+     <br>
+     <br>
+     <input type="reset">
+     <input type="submit">
+
+
+
+   </form>
+</div>
+<hr>
 </body>
   </html>
