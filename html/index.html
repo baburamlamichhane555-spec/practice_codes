@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <link rel="icon" type="image/png" href="images/favicons.png">
   <title>My first webpage</title>
 </head>
 <body>
@@ -48,6 +49,9 @@
        <source src="video/Bandeya_Full_video_song.mp4"  type="video/mp4">
        <source src="video/Bandeya_Full_video_song.ogg" type="video/ogg">
  </video>
+
+ <!-- we are also able to implement hyperlink in videous too -->
+
 
 <hr>
 <!-- implementing what we learned -->
@@ -98,17 +102,136 @@
    Timi Hasi Rakhnu Hai…
 </pre>
 
-<p> video:- 
-</p>
-<video controls height="200px" width="300px" autoplay muted loop>
+  <p> 
+      video:- 
+  </p>
+  <video controls height="200px" width="300px" autoplay muted loop>
        <source src="video/Purna_Rai_-_Kalo_Seto.mp4"  type="video/mp4">
        <source src="video/Purna_Rai_-_Kalo_Seto.ogg" type="video/ogg">
- </video>
+  </video>
 
 
 
+ <!-- vs code shortcuts:-
+ 1. to replace:- ctrl f and then type the text you want to replace
+ or search from left bar of vs code and replace.
+ or, select one and ctrl+ D:- to select same occurance or as much as you want.
+ alt+d:- to select custom occurance
+ 2. to copy above:- alt + shift + up/down arrow
+ 3. to move line down:- alt + down arrow
+ 4. to move line up:- alt + up arrow
+ 5. to make all visible or wrap:- alt + z
+
+-->
+<br>
+<hr>
+
+<!-- text formatting -->
+<p> This is Normal text</p>
+<p> This is <b>bold</b> text</p>
+<p> This is <i> italics</i> text</p>
+<p> This is <u>underlined</u> text</p>
+<p> This is <del>deleted</del> text</p>
+<p> This is <big>big</big> text</p>
+<p> This is <small>small</small> text</p>
+<p> This is <sub>subscript</sub> text</p>
+<p> This is <sup>superscript</sup> text</p>
+<p> This is <tt>monospace</tt> text</p>
+<p> This is <mark>highlighted</mark> text</p>
+
+<!-- 8.span and div:-
+ <span> inline container to group elements </span>
+ <div> block container to group elements </div>
+-->
 
 
+<h1><span style="background-color: yellow;">this is a span title</span></h1>
+<h1><div style="background-color: yellow;">this is a div title</div></h1>
 
+<!-- 9.lists :-
+  1. unordered list
+  2. ordered list
+  3. description list
+  -->
+  <h4>grocessary items:-</h4>
+   <!-- unordered list:- order of item not really matters  -->
+<ul>
+      <!-- list items</li> -->
+      <li>milk</li>
+      <li>eggs</li>
+      <li>bread</li>
+      <li>fruits</li>
+      <ul>
+         <li>apple</li>
+         <li>banana</li>
+         <li>orange</li>
+      </ul>
+
+</ul>
+<h4>To do list:-</h4>
+<ol>
+      <!-- ordered list:- order of item matters  -->
+       <li>learn html</li>
+       <li>learn css</li>
+       <li>learn javascript</li>
+       <ol>
+            <li>variables</li>
+            <li>data types</li>
+            <li>functions</li>
+       </ol>
+    
+</ol>
+<dl style="background-color: lightgreen;">
+      <!-- help to describe terms -->
+       <dt>html</dt>
+       <dd>Hyper Text Markup Language</dd>
+       <dt>css</dt>
+       <dd>Cascading Style Sheets</dd>
+       <dt>javascript</dt>
+       <dd>Programming Language for the Web</dd>
+</dl>
+ 
+<!-- 10. table  -->
+ <h3> School hours</h3>
+ <table border="1">
+      <tr align="center">
+           <th width="100">Day</th>
+           <th width="100">Start Time</th>
+           <th width="100">End Time</th>
+      </tr>
+      <tr align="center">
+           <td>Monday</td>
+           <td>8:00 AM</td>
+           <td>3:00 PM</td>
+      </tr>
+      <tr align="center">
+           <td>Tuesday</td>
+           <td>8:00 AM</td>
+           <td>3:00 PM</td>
+      </tr>
+      <tr align="center">
+           <td>Wednesday</td>
+           <td>8:00 AM</td>
+           <td>3:00 PM</td>
+      </tr>
+      <tr align="center">
+           <td>Thursday</td>
+           <td>8:00 AM</td>
+           <td>3:00 PM</td>
+      </tr>
+      <tr align="center">
+           <td>Friday</td>
+           <td>8:00 AM</td>
+           <td>3:00 PM</td>
+      </tr>
+ </table>
+<br>
+
+<h4>Click to the Button below</h4>
+<a href="">
+ <!-- 11. Buttons  -->
+  
+  <button style="font-size: 25px; border-radius: 20px; background-color: aqua; color:blue">click me</button>
+</a>
 </body>
-</html>
+  </html>
